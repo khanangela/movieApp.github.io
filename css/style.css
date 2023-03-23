@@ -1,0 +1,687 @@
+body{
+    background-color: #1e1e1f;
+}
+
+.collapsible-link {
+    width: 100%;
+    position: relative;
+    color: #fff!important;
+    text-decoration: none;
+    font-size: 22px;
+    
+    text-align: left;
+  }
+  
+  .collapsible-link::before {
+    content: "\f067";
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: "FontAwesome";
+    font-size: 1.8rem;
+  }
+  
+  .collapsible-link[aria-expanded="true"]::before {
+    content: "\f106";
+  }
+  
+
+  .ucm-bg {
+    padding: 120px 0 70px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.ucm-bg::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .95;
+}
+.ucm-bg-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.section-title .sub-title {
+    display: block;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.navbar-wrap > ul > li.active > a, .navbar-wrap > ul > li:hover > a, .mobile-menu .navigation li.active > a, .header-lang form .icon, .banner-content .sub-title, .banner-content .title > span, .banner-meta ul li.release-time > span > i, .banner-meta ul li.category > a:hover, .section-title .sub-title, .movie-content .top .date, .movie-content .bottom ul li .quality, .movie-content .bottom ul li > span i, .movie-content .top .title a:hover, .ucm-active .owl-nav button:hover, .ucm-active-two .owl-nav button:hover, .tr-movie-menu-active button.active, .footer-menu nav .navigation li:hover > a, .quick-link-list ul li a:hover, .footer-social ul li a:hover, .copyright-text > p > a, .mobile-menu .social-links li a:hover, .header-top-link .quick-link li a:hover, .header-top-link .header-social li a:hover, .header-top-subs > p > span, .movie-item-two .movie-content .title a:hover, .movie-content-bottom ul li.tag a:hover, .breadcrumb-content .breadcrumb li a, .breadcrumb-content .title > span {
+    color: #e4d804;
+}
+.section-title .title {
+    margin-bottom: 0;
+    font-size: 36px;
+   
+}
+.section-title {
+    position: relative;
+}
+.ucm-nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 102px;
+    position: relative;
+}
+.ucm-nav-wrap .nav-tabs {
+    border: none;
+}
+.ucm-nav-wrap .nav-tabs li {
+    margin-right: 12px;
+    margin-top: 12px;
+}
+.ucm-nav-wrap .nav-tabs .nav-link.active, .movie-bg .tr-movie-menu-active button.active {
+    color: #fff;
+    border-color: red;
+}
+.ucm-nav-wrap .nav-tabs .nav-link, .movie-bg .tr-movie-menu-active button, .movie-filter-form select {
+    border-radius: 3px;
+    background: #20212b;
+    font-size: 12px;
+    font-weight: 600;
+    color: #e3dfdf;
+    border: 2px solid #2d303d;
+    padding: 8px 25px;
+    margin-bottom: 0;
+    transition: none !important;
+}
+.ucm-nav-wrap .nav-tabs li:last-child {
+    margin-right: 0;
+}
+.movie-poster {
+    margin-bottom: 23px;
+    position: relative;
+}
+.movie-poster img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.movie-content {
+    padding-right: 10px;
+}
+.movie-content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.movie-content .top .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+.movie-content .top .date {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 50px;
+    color: red;
+}
+.movie-content .bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-content .bottom ul li {
+    display: flex;
+    align-items: center;
+}
+.movie-content .bottom ul li .quality {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 11px;
+    color: red;
+    text-transform: uppercase;
+}
+.movie-content .bottom ul li {
+    display: flex;
+    align-items: center;
+}
+.movie-content .bottom ul li > span {
+    color: #bcbcbc;
+    font-size: 12px;
+}
+.movie-content .bottom ul li > span i {
+    margin-right: 5px;
+    color: #fff;
+}
+.movie-content .bottom ul li .rating {
+    margin-left: 15px;
+}
+.movie-content .bottom ul li > span {
+    color: #bcbcbc;
+    font-size: 12px;
+}
+.ucm-active .owl-nav, .ucm-active-two .owl-nav {
+    position: absolute;
+    top: -94px;
+    right: -10px;
+    background: #20212b;
+    border: 2px solid #2d303d;
+    color: #e3dfdf;
+    padding: 5.5px 10px;
+    border-radius: 50px;
+}
+.ucm-active.owl-carousel .owl-nav button.owl-prev, .ucm-active-two.owl-carousel .owl-nav button.owl-prev {
+    padding-right: 17px;
+    margin-right: 35px;
+    position: relative;
+}
+.ucm-active .owl-nav .owl-prev::before, .ucm-active-two .owl-nav .owl-prev::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 26px;
+    background: #292b37;
+}
+.ucm-active .owl-nav button, .ucm-active-two .owl-nav button {
+    position: relative;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.section-title .sub-title {
+    display: block;
+    line-height: 1;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    position: relative;
+    color: red;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+@media (min-width: 992px){
+
+.text-lg-left {
+    text-align: left!important;
+}
+}
+
+h5.title a {
+    color: #fff;
+    text-decoration: none;
+}
+.red-btn {
+    background-color: red;
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.red-btn:hover{
+    background-color: #e1dede;
+    color: red;
+}
+.lang-btn {
+    border: 1px solid #c3bfbf;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 23px;
+   
+}
+
+.lang-btn:hover{
+    background-color: transparent;
+    border: 1px solid #c3bfbf;
+}
+
+
+.main{
+    background: url('../images/banner.jpg');
+    position: relative;
+    height: 100vh;
+}
+.main:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    padding: 5px 120px;
+}
+.banner-text{
+    position: relative;
+    z-index: 1;
+}
+.banner-text h1 {
+    color: #fff;
+    font-size: 49px;
+}
+input#search::placeholder{
+     color: #fff;
+}
+input#search1::placeholder{
+    color: #fff;
+}
+.lead {
+    font-size: 1.25rem;
+    z-index: 1;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+}
+.banner-text h3 {
+    color: #fff;
+    font-size: 25px;
+    /* margin-top: 9px; */
+}
+.banner-text h4 {
+    font-size: 20px;
+    color: #fff;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.9rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-bold {
+    /* padding: 14px 24px; */
+    width: 163px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 23px;
+    height: 54px;
+    background-color: red;
+}
+input#search {
+    background-color: rgba(0,0,0,0.5);
+}
+input#search1 {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.carousel{
+    background-color: #000;
+}
+h2.featurette-heading {
+    color: #fff;
+    font-weight: bold!important;
+    font-size: 39px;
+    margin-top: 95px;
+}
+p.carousel-text {
+    color: #fff;
+    font-size: 26px;
+    margin-top: 18px;
+}
+.mb-55 {
+    margin-bottom: 55px;
+}
+
+.accordion1 {
+    background: #000;
+}
+
+h1.FAQ {
+    font-weight: 800;
+}
+div#headingOne {
+    background-color: grey;
+    border: 0px!important;
+    border-radius: 1px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+div#headingTwo {
+    background-color: grey;
+    border: 0px!important;
+    border-radius: 1px;
+    margin-top: 8px;
+    padding: 16px;
+}
+div#headingThree {
+    background-color: grey;
+    border: 0px!important;
+    border-radius: 1px;
+    margin-top: 8px;
+    padding: 16px;
+}
+div#headingFour {
+    background-color: grey;
+    border: 0px!important;
+    border-radius: 1px;
+    margin-top: 8px;
+    padding: 16px;
+}
+.card {
+    border: 0px;
+    background-color: #000;
+    border-radius: 1px!important;
+}
+div#collapseOne {
+    background: #545252;
+}
+div#collapseTwo {
+    background: #545252;
+}
+div#collapseThree {
+    background: #545252;
+}
+div#collapseFour {
+    background: #545252;
+}
+p.para {
+    color: #fff;
+    font-size: 26px;
+}
+.collapsible-link[aria-expanded="true"]::before {
+    content: "\f00d";
+}
+
+h4.display-7 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 21px;
+}
+
+.form2 {
+    width: 600px;
+    margin: auto;
+}
+
+
+.footer{
+    background-color: #000;
+}
+
+p.query {
+    color: #d9d5d5;
+    text-decoration: underline;
+}
+ul.footer-widget {
+    list-style: none;
+    margin-top: 23px;
+}
+ul.footer-widget li{
+    margin-bottom: 8px;
+}
+ul.footer-widget li a{
+    color: #d9d5d5;
+    font-size: 15px;
+}
+
+.lang-btn2 {
+    border: 1px solid #c3bfbf;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 25px;
+   
+}
+
+.lang-btn2:hover{
+    background-color: transparent;
+    border: 1px solid #c3bfbf;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 384px;
+    z-index: 9;
+  }
+  .form-popup h1 {
+    color: #fff;
+}
+.form-popup1 {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 384px;
+    z-index: 9;
+  }
+  .form-popup1 h1 {
+    color: #fff;
+    font-size: 25px;
+}
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 412px;
+    padding: 90px 61px;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .form-container input::placeholder {
+    color: #ddd;
+    font-family: sans-serif;
+}
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 13px 19px;
+    border-radius: 4px;
+    margin: 4px 0 11px 0;
+    border: none;
+    background: #605e5e;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .form-container {
+    max-width: 412px;
+    padding: 90px 61px;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .form-container input::placeholder {
+    color: #ddd;
+    font-family: sans-serif;
+}
+
+.form-container1 input::placeholder {
+    color: #ddd;
+    font-family: sans-serif;
+}
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 13px 19px;
+    border-radius: 4px;
+    margin: 4px 0 11px 0;
+    border: none;
+    background: #605e5e;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .form-container1 {
+    max-width: 500px;
+    padding: 40px 31px;
+    background-color: rgba(0,0,0,0.8);
+}
+  /* Set a style for the submit/login button */
+  .form-container1 .btn {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+    opacity: 0.9;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container1 .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container1 .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  #query{
+     display: flex;
+     justify-content: space-between;
+
+  }
+  .remember-me {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.need-help {
+    color: #fff;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-top: 3px;
+}
+p.new {
+    color: #ddd;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+}
+span#sm-new a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.9rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 0px!important;
+    line-height: 1.5;
+    color: #ddd;
+    background-color: #6e6c6c;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.radio-group {
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .radio-group label {
+    display: block;
+    margin-right: 12px;
+  }
+  
+  .radio-group input[type="radio"] {
+    display: inline-block;
+    margin-right: 4px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  label {
+    display: inline-block;
+    color: #fff;
+}
+
+
+/* movies */
